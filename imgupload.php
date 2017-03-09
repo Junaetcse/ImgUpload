@@ -17,7 +17,7 @@ header('Content-type : bitmap; charset=utf-8');
 	
 	if($is_written > 0) {
 		
-		$connection = mysqli_connect('localhost', 'techborno', 'm8AJhl^}bVFW','techborno_student_list');
+		$connection = mysqli_connect('localhost', '', '','techborno_student_list');
 		$query = "INSERT INTO photos(image,name) values('$image_name','$path');";
 		
 		$result = mysqli_query($connection, $query) ;
